@@ -21,28 +21,28 @@ function playRound(player, computer) {
     else if (player === 0) {
         //...and computer has paper, then user loses
         if (computer === 1)
-            return "You Lose! Paper beats Rock!";
+            return "You Lose! Bulbasaur (paper) beats Geodude (rock)!";
         //...and computer has scissors, then user wins
         else
-            return "You Win! Rock beats Scissors!";
+            return "You Win! Geodude (rock) beats Scyther (scissors)!";
     }
     //if user has paper...
     else if (player === 1) {
         //...and computer has rock, then user wins
         if (computer === 0)
-            return "You Win! Paper beats Rock!";
+            return "You Win! Bulbasaur (paper) beats Geodude (rock)!";
         //...and computer has scissors, then user loses
         else
-            return "You Lose! Scissors beat Paper!";
+            return "You Lose! Scyther (scissors) beat Bulbasaur (paper)!";
     }
     //if user has scissors...
     else if (player === 2) {
         //...and computer has paper, user wins
         if (computer === 1)
-            return "You Win! Scissors beat Paper!";
+            return "You Win! Scyther (scissors) beat Bulbasaur (paper)!";
         //...and computer has rock, user loses
         else
-            return "You Lose! Rock beats Scissors!";
+            return "You Lose! Geodude (rock) beats Scyther (scissors)!";
     }
     //if user has wrong input, then error
     else

@@ -35,6 +35,7 @@ h1 {
 
 .title p {
     font-style: italic;
+    font-size: 15px;
 }
 .score {
     font-size: 52px;

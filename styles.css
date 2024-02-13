@@ -1,0 +1,166 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FFDE00;
+    /*rgb(110, 64, 191);*/
+    font-family: Verdana, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: normal; 
+    color: black;
+}
+
+.title {
+    background-color: #FFDE00;
+    width: 100%;
+    text-align: center;
+}
+
+.title img {
+    max-width: 350px;
+    height: auto;
+}
+
+.title h1 {
+    font-weight: bold;
+}
+
+.title p {
+    font-style: italic;
+}
+.score {
+    font-size: 52px;
+    background-color: #4989c4;
+    border-radius: 0.3em;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.score-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    width: 100%;
+    padding-top: 3em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start; /* Align items at the top */
+    width: 100%;
+    padding-top: 5em;
+}
+
+.image-container {
+    position: relative;
+    text-align: center; /* Center text within the container */
+}
+
+.label {
+    position: absolute;
+    top: -30px; /* Adjust the distance of the label from the top of the image */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity */
+    padding: 5px 10px; /* Adjust padding */
+    border-radius: 5px; /* Adjust border radius */
+    font-size: 12px; /* Adjust font size */
+}
+
+.buttons img {
+    max-width: 200px;
+    height: auto;
+}
+
+.hover-image {
+    transition: transform 0.3s ease;
+}
+
+.hover-image:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.score-log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+    text-align: center;
+}
+
+.score{
+    margin-bottom: 22.25px;
+    margin-top: 22.25px;
+}
+
+.footer{
+    background-color: #FFDE00;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 2em;
+}
+
+.round-number
+{
+    font-size: 28px;
+}
+
+.game-log{
+    padding-top: 6em;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    gap: 6em;
+    flex: 1;
+}
+
+.game-log p {
+    margin-top: 10%;
+}
+
+.player-log,
+.computer-log,
+.verus-log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-log img,
+.computer-log img {
+    max-width: 350px;
+    height: 300px;
+}
+
+.verus-log img {
+    max-width: 50px;
+    height: auto;
+    margin-top: 125px;
+}
+
+
+p {
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    color: black;
+}

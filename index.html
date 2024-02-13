@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Rock Paper Scissors</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/pokeball-browersTab.png" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <img src="./images/pokemon-title-4.png" alt="pokemon title">
+            <h1>Paper Rock Scissors</h1>
+            <p>First to 5 wins!</p>
+        </div>
+
+        <div class="score-container">
+            <div class="score-log">
+                <div class="score">0 - 0</div>
+                <div class="round-number"></div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="image-container">
+                <div class="label">Rock</div>
+                <img class="hover-image rock" src="./images/geodude-stone.png" alt="rock icon" title="Geodude">              
+            </div>
+            <div class="image-container">
+                <div class="label">Paper</div>
+                <img class="hover-image paper" src="./images/bulbasaur-paper.png" alt="paper icon" title="Bulbasaur">              
+            </div>
+            <div class="image-container">
+                <div class="label">Scissor</div>
+                <img class="hover-image scissors" src="./images/scyther-scissor.png" alt="scissor icon" title="Scyther">
+            </div>
+        </div>
+
+        <div class="game-log">
+            <div class="player-log">
+                <img src="./images/Ash.png" alt="user icon">
+                <p class="player-choice"></p>
+            </div>
+            <div class="verus-log">
+                <img src="./images/vs.png" alt="verus icon">
+            </div>
+            <div class="computer-log">
+                <img src="./images/Team_Rocket.png" alt="computer icon">
+                <p class="computer-choice"></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>© 2024 JV Project</div>
+        </div>
+        
+    </div>
+
+    <script src="./script.js" defer></script>
+</body>
+
+</html>

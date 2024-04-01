@@ -168,3 +168,35 @@ resetButton.addEventListener('click', function() {
     // Reload the window
     window.location.reload();
 });
+
+
+/**
+ * Play, pause, and stop background music when buttons is clicked
+ */
+// Get the audio element with the ID 'backgroundMusic'
+const backgroundMusic = document.getElementById('backgroundMusic');
+
+// Get the button elements for play, pause, and stop
+const playButton = document.getElementById('playButton');
+const pauseButton = document.getElementById('pauseButton');
+const stopButton = document.getElementById('stopButton');
+
+// Add an event listener to the play button
+playButton.addEventListener('click', function() {
+    // When the play button is clicked, start playing the background music
+    backgroundMusic.play();
+});
+
+// Add an event listener to the pause button
+pauseButton.addEventListener('click', function() {
+    // When the pause button is clicked, pause the background music
+    backgroundMusic.pause();
+});
+
+// Add an event listener to the stop button
+stopButton.addEventListener('click', function() {
+    // When the stop button is clicked,
+    // pause the background music and reset its playback position to the beginning
+    backgroundMusic.pause();
+    backgroundMusic.currentTime = 0; // Reset the audio to the beginning
+});

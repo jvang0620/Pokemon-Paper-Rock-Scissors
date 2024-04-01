@@ -159,3 +159,12 @@ function checkWinner() {
     else
         return "ERROR: It's a tie?"
 }
+
+// Get the reset button element
+const resetButton = document.getElementById('resetButton');
+
+// Add event listener to the reset button
+resetButton.addEventListener('click', function() {
+    // Reload the window
+    window.location.reload();
+});

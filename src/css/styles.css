@@ -171,3 +171,13 @@ p {
     padding: 10px;
     color: black;
 }
+
+#resetButton {
+    padding: 5px 10px; /* Adjust padding to make the button smaller */
+    font-size: 14px; /* Adjust font size */
+    width: auto; /* Ensure the button only takes up the necessary width */
+    display: block; /* Make the button a block-level element */
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+

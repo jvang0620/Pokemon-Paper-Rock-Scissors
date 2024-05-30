@@ -1,7 +1,7 @@
 # Pokemon Rock Paper Scissors
 
 <div align="center">
-    <img src="/images/app_image_2.JPG" alt="Screenshot of Live Server Extension" width="600">
+    <img src="/images/app_image_1.JPG" alt="Screenshot of Live Server Extension" width="600">
 </div>
 
 ### Overview:

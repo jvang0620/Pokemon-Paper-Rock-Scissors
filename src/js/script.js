@@ -21,28 +21,28 @@ function playRound(player, computer) {
     else if (player === 0) {
         //...and computer has paper, then user loses
         if (computer === 1)
-            return "You Lose! Bulbasaur (paper) beats Geodude (rock)!";
+            return "You Lose! Kartana (paper) beats Golmon (rock)!";
         //...and computer has scissors, then user wins
         else
-            return "You Win! Geodude (rock) beats Scyther (scissors)!";
+            return "You Win! Golmon (rock) beats Mega Scizor (scissors)!";
     }
     //if user has paper...
     else if (player === 1) {
         //...and computer has rock, then user wins
         if (computer === 0)
-            return "You Win! Bulbasaur (paper) beats Geodude (rock)!";
+            return "You Win! Kartana (paper) beats Golmon (rock)!";
         //...and computer has scissors, then user loses
         else
-            return "You Lose! Scyther (scissors) beat Bulbasaur (paper)!";
-    }
+            return "You Lose! Mega Scizor (scissors) beat Kartana (paper)!";
+    } //Mega Scizor
     //if user has scissors...
     else if (player === 2) {
         //...and computer has paper, user wins
         if (computer === 1)
-            return "You Win! Scyther (scissors) beat Bulbasaur (paper)!";
+            return "You Win! Mega Scizor (scissors) beat Kartana (paper)!";
         //...and computer has rock, user loses
         else
-            return "You Lose! Geodude (rock) beats Scyther (scissors)!";
+            return "You Lose! Golmon (rock) beats Mega Scizor (scissors)!";
     }
     //if user has wrong input, then error
     else
@@ -64,6 +64,43 @@ function game(player) {
     //loop 5 times for 5 rounds per game
     let computer = getComputerChoice(); //get computer input
 
+    // Play the Rock Throw sound if the player selects Golem
+    if (player === 0) {
+        const rockThrowSound = document.getElementById('rockThrowSound');
+        rockThrowSound.currentTime = 2; // Start from the second 2 of the audio file
+        rockThrowSound.play(); // Play the audio
+
+        // Stop the playback after 2 second
+        setTimeout(function() {
+            rockThrowSound.pause();
+        }, 2000);
+    }
+
+    // Play the Paper Cut sound if the player selects Kartana
+    if (player === 1) {
+        const paperThrowSound = document.getElementById('paperThrowSound');
+        paperThrowSound.currentTime = 1; // Start from the second 1 of the audio file
+        paperThrowSound.play(); // Play the audio
+
+        // Stop the playback after 1 second
+        setTimeout(function() {
+            paperThrowSound.pause();
+        }, 1000);
+    }
+
+    // Play the Scissors Cut sound if the player selects Mega Scizor
+    if (player === 2) {
+        const scissorsThrowSound = document.getElementById('paperThrowSound');
+        scissorsThrowSound.currentTime = 5.5; // Start from the second 5.5 of the audio file
+        scissorsThrowSound.play(); // Play the audio
+
+        // Stop the playback after 1 second
+        setTimeout(function() {
+            scissorsThrowSound.pause();
+        }, 1000);
+    }
+
+    // Display player's choice
     if (player === 0) {
         const para = document.createElement("p");
         para.textContent = "Rock";
@@ -78,6 +115,7 @@ function game(player) {
         pChoice.appendChild(para);
     }
 
+    // Display computer's choice
     if (computer === 0) {
         const para = document.createElement("p");
         para.textContent = "Rock";
